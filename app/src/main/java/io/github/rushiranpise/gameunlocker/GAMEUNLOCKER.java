@@ -46,8 +46,8 @@ public class GAMEUNLOCKER implements IXposedHookLoadPackage {
         //setPropValue("MODEL", "ASUS_AI2201");
 
         // SDK-related properties
-        setSDKPropValue("SDK_INT", 29); // Android 13
-        setSDKPropValue("RELEASE", "10");
+        setSDKPropValue("SDK_INT", 26); // Android 13
+        setSDKPropValue("RELEASE", "8");
         //setSDKPropValue("CODENAME", "REL");
 
         XposedBridge.log("Device properties spoofed to ASUS ROG 6, Android 13");
