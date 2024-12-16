@@ -24,7 +24,8 @@ public class GAMEUNLOCKER implements IXposedHookLoadPackage {
         "com.miHoYo.GenshinImpact",
         "com.riotgames.league.wildrift",
         "com.google.android.googlequicksearchbox",
-        "com.google.android.apps.bard"
+        "com.google.android.apps.bard",
+        "flar2.devcheck"
     };
 
     @Override
@@ -39,15 +40,15 @@ public class GAMEUNLOCKER implements IXposedHookLoadPackage {
 
     private static void spoofDeviceProperties() {
         // General device properties
-        setPropValue("BRAND", "asus");
-        setPropValue("MANUFACTURER", "asus");
-        setPropValue("DEVICE", "AI2201");
-        setPropValue("MODEL", "ASUS_AI2201");
+        //setPropValue("BRAND", "asus");
+        //setPropValue("MANUFACTURER", "asus");
+        //setPropValue("DEVICE", "AI2201");
+        //setPropValue("MODEL", "ASUS_AI2201");
 
         // SDK-related properties
         setSDKPropValue("SDK_INT", 29); // Android 13
         setSDKPropValue("RELEASE", "10");
-        setSDKPropValue("CODENAME", "REL");
+        //setSDKPropValue("CODENAME", "REL");
 
         XposedBridge.log("Device properties spoofed to ASUS ROG 6, Android 13");
     }
